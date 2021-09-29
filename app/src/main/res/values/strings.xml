@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Vstream</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+
+    <string name="bvp_right">RIGHT</string>
+    <string name="bvp_left">LEFT</string>
+    <string name="volume">Volume: %1$d</string>
+    <string name="brightness">Brightness: %1$d</string>
+    <string name="playing">Stream</string>
+
+    <string name="home">Home</string>
+    <string name="schedule">Schedule</string>
+    <string name="aboutUs">About</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="email">Email : test@gmail.com</string>
+    <string name="phone">+91999999999</string>
+    <string name="website">website.com</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="shalom_kids_quote">"Let the little Children come to me"  \n( Matthew 19:14 )</string>
+    <string name="title_activity_player_full_screen">PlayerFullScreenActivity</string>
+    <string name="about">About</string>
+    <string name="lorem_ipsum_dolor_sit_amet_consectetur_adipiscing">Lorem ipsum dolor sit amet consectetur adipiscing.</string>
+    <string name="lost_internet">Lost Internet</string>
+    <string name="no_internet">You cannot proceed because you have lost internet connection. Please make sure that you have active WIFI or Data Connection enabled.</string>
+    <string name="schedule_url_not_specified">Schedule url not specified</string>
+    <string name="streaming_url_not_specified">Streaming url not specified</string>
+    <string name="title">Webandcrafts</string>
+    <string name="content">Webandcrafts is a global IT solutions company based in Infopark - Koratty, Thrissur, Kerala, India. We are a team of young and passionate professionals who have provided its clientele a new definition in the field of web by delivering aesthetic and classy web solutions. Webandcrafts is an absolute package for those looking to be distinct from the rest. We believe in being leaders rather than followers. Within a short span of time since we have stepped into the competitive web industry, we have left our traces through our competencies, methodologies and business ethics. ‘Changing Trends, Distinct Designs has always been our motto and therefore with differentiation, innovation and swift customer response we have been able to achieve unparalleled success.</string>
+
+
+</resources>

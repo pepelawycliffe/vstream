@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/item_bg_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/containerBackGround"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="0dp"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_weight=".7"
+                android:orientation="vertical">
+
+
+                <com.webandcrafts.vstream.customviews.SKtetViewRobotoBold
+                    android:id="@+id/programName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Higher Ground"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+
+                <com.webandcrafts.vstream.customviews.SKtextViewRobotoRegular
+                    android:id="@+id/programDescription"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/programName"
+                    android:layout_marginTop="6dp"
+                    android:text="@string/app_name"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    tools:ignore="SmallSp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center">
+
+
+                    <LinearLayout
+                        android:id="@+id/timeContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="5dp"
+                        android:gravity="center">
+
+                        <!--   <ImageView
+                               android:id="@+id/alarmimagenew"
+                               android:layout_width="18dp"
+                               android:layout_height="18dp"
+                               android:layout_alignLeft="@+id/ProgramTime"
+                               android:layout_alignStart="@+id/ProgramTime"
+                               android:layout_centerVertical="true"
+                               android:layout_gravity="center"
+                               android:contentDescription="@string/app_name"
+                               app:srcCompat="@drawable/ic_alarm_new" />-->
+
+                        <com.webandcrafts.vstream.customviews.SKtetViewRobotoBold
+                            android:id="@+id/ProgramTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="6dp"
+                            android:text="08:00 am"
+                            android:textColor="#ffffff"
+                            android:textSize="11sp"
+                            tools:ignore="SmallSp" />
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:background="@color/lineColor" />
+</LinearLayout>

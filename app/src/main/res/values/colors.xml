@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1f1f1f</color>
+    <color name="colorPrimaryDark">#1f1f1f</color>
+    <!--<color name="colorAccent">#FF4081</color>-->
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="selected_color">#fce76c</color>
+    <color name="textColor">#ffffff</color>
+    <color name="splashBackGround">#ecf1fd</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="black">#000000</color>
+
+    <color name="streamSelectedTextColor">#fe5c94</color>
+    <color name="programsSelectedTextColor">#7b67ff</color>
+    <color name="aboutSelectedTextColor">#5fe89f</color>
+
+    <color name="randomColorOne">#f87c7c</color>
+    <color name="randomColorTwo">#276b8f</color>
+    <color name="randomColorThree">#43cd6a</color>
+    <color name="randomColorFour">#feaf56</color>
+    <color name="randomColorFive">#5de6fa</color>
+    <color name="greyColor">#929292</color>
+    <color name="grey">#EEEEEE</color>
+    <color name="white">#FFFFFF</color>
+    <color name="toolbar_txt_color">#272727</color>
+    <color name="lineColor">#292929</color>
+    <color name="timetxtcolor">#fdfdfd</color>
+    <color name="destxtcolor">#fdfdfd</color>
+    <color name="item_bg_color">#1f1f1f</color>
+
+
+    <integer-array name="androidcolors">
+        <item>@color/randomColorOne</item>
+        <item>@color/randomColorTwo</item>
+        <item>@color/randomColorThree</item>
+        <item>@color/randomColorFour</item>
+        <item>@color/randomColorFive</item>
+
+    </integer-array>
+
+    <color name="bvp_subtitle_color">#FFFFFF</color>
+    <color name="bg_color_transparent">#F2272727</color>
+    <color name="bg_color_about">#33000000</color>
+
+
+</resources>

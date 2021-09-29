@@ -1,0 +1,119 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bvp="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="2"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:id="@+id/frameLayOutContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!--<FrameLayout-->
+            <!--android:id="@+id/youtube_layout"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:visibility="visible" />-->
+            <com.webandcrafts.vstream.bettervideoplayer.BetterVideoPlayer
+                android:id="@+id/bvp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                bvp:bvp_autoPlay="true"
+                bvp:bvp_captionColor="@android:color/holo_blue_light"
+                bvp:bvp_captionSize="20sp"
+                bvp:bvp_loadingStyle="RotatingPlane"
+                bvp:bvp_showBottomProgressBar="true"
+                bvp:bvp_swipeGesturesEnabled="true" />
+
+            <com.webandcrafts.vstream.customviews.SKtextViewRobotoRegular
+                android:id="@+id/mNoStreamUrl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/streaming_url_not_specified"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/lyt_resize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:visibility="gone"
+                android:layout_margin="20dp">
+
+                <ImageView
+                    android:id="@+id/imageViewResize"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    bvp:srcCompat="@drawable/ic_zoom_out" />
+
+                <ImageView
+                    android:id="@+id/fullScreenView"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:contentDescription="@string/app_name"
+                    bvp:srcCompat="@drawable/ic_full_screen" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@android:color/black">-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/fullScreenView"-->
+        <!--android:layout_width="30dp"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:src="@drawable/ic_full_screen" />-->
+
+        <!--</RelativeLayout>-->
+
+
+        <RelativeLayout
+            android:id="@+id/programListCOntainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewCurrentProgramList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.webandcrafts.vstream.customviews.SKtextViewRobotoRegular
+                android:id="@+id/mNoSchedule"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/schedule_url_not_specified"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

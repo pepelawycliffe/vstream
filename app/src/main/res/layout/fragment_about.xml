@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.webandcrafts.vstream.fragments.AboutFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <com.webandcrafts.vstream.customviews.SKtextViewRobotoRegular
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:lineSpacingExtra="12sp"
+            android:text="@string/title"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <com.webandcrafts.vstream.customviews.SKtextViewRobotoThin
+            android:id="@+id/txtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTitle"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:lineSpacingExtra="9sp"
+            android:text="@string/content"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtDescription"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <com.webandcrafts.vstream.customviews.SKtextViewRobotoThin
+                android:id="@+id/mEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <ImageView
+                    android:id="@+id/facebook"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/app_name"
+                    app:srcCompat="@drawable/ic_facebook_new" />
+
+
+                <ImageView
+                    android:id="@+id/website"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/app_name"
+                    app:srcCompat="@drawable/ic_website_new" />
+
+                <ImageView
+                    android:id="@+id/youtube"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/app_name"
+                    app:srcCompat="@drawable/ic_youtube_new" />
+
+                <ImageView
+                    android:id="@+id/twitter"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/app_name"
+                    app:srcCompat="@drawable/ic_twitter_new" />
+
+                <ImageView
+                    android:id="@+id/instagram"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/app_name"
+                    app:srcCompat="@drawable/insta" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

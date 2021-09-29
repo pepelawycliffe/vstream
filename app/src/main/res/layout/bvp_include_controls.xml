@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bvp_include_relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bvp_controls_background"
+    android:clickable="true"
+    android:paddingLeft="@dimen/bvp_content_inset_half"
+    android:paddingRight="@dimen/bvp_content_inset_half">
+
+    <SeekBar
+        android:id="@+id/seeker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnPlayPause"
+        android:layout_alignTop="@+id/btnPlayPause"
+        android:layout_toEndOf="@+id/position"
+        android:layout_toLeftOf="@+id/duration"
+        android:layout_toRightOf="@+id/position"
+        android:layout_toStartOf="@+id/duration"
+        android:maxHeight="1000dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_toEndOf="@+id/btnPlayPause"
+        android:layout_toRightOf="@+id/btnPlayPause"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="@dimen/bvp_text_size_medium"
+        android:visibility="gone"
+        tools:ignore="UnusedAttribute"
+        tools:text="00:00" />
+
+    <TextView
+        android:id="@+id/duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnPlayPause"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/btnPlayPause"
+        android:layout_marginEnd="@dimen/bvp_content_inset_half"
+        android:layout_marginRight="@dimen/bvp_content_inset_half"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="@dimen/bvp_text_size_medium"
+        android:visibility="gone"
+        tools:ignore="UnusedAttribute"
+        tools:text="-05:00" />
+
+    <ImageButton
+        android:id="@+id/btnPlayPause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:background="?selectableItemBackground"
+        app:srcCompat="@drawable/ic_play_bvp"
+        tools:ignore="ContentDescription" />
+
+</RelativeLayout>
